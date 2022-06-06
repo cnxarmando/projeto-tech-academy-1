@@ -4,7 +4,7 @@ Fontes de conteudos:
 
 - https://icons8.com.br/icons/
 
-Melhorias a serem realizadas
+Melhorias a serem realizadas:
 * CSS - Estilização para varios dispozitivos
 * JS - Corrigir direcionamento e armazenar dados no BD
-* HTML - Semântica 
+* HTML - Semântico 
