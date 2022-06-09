@@ -77,18 +77,20 @@ header {
     margin-top: 2rem;
 }
 
-.menu li a {
+.menu li {
+    display: inline-block;
     margin: 1rem;
     font-size: 2rem;
     list-style: none;
     align-items: center;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .menu li :hover {
     background-color: aqua;
-    padding: 1.3rem;
+    padding: 1rem;
     border-radius: 1.5rem;
+    transition: .8s;
 }
 
 .presentation {
@@ -293,6 +295,7 @@ header {
 
 /* --------------------FOOTER------------------*/
 #contact {
+    display: flex;
     
     flex-direction: column;
     position: relative;
@@ -480,8 +483,67 @@ header {
     #technologies .project-item:nth-child(even) {
         flex-direction: row-reverse;
     }
-    
-
-
 }
 
+@media only screen and (min-width: 400px) {
+        
+    .menu li {
+        display: block;
+        margin: 1rem;
+        font-size: 1.2rem;
+        list-style: none;
+        align-items: center;
+        transition: .5s;
+    }
+
+    .presentation {
+        max-width: 90%;
+    }
+
+    .presentation h1 {
+        /* display: block; */
+        width: fit-content;
+        font-size: 3rem;
+        color: transparent;
+        animation: text_reveal .5s ease forwards;
+        animation-delay: 1.5s;
+    }
+
+    .presentation .line {
+        margin-left: 10rem;
+        font-size: 4rem;
+    }
+
+
+    #technologies .project-item {
+        display: flex;
+        height: 600px;
+        margin: 1rem;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #technologies .all-projects .project-info {
+        height: 100%
+    }
+
+    #technologies .all-projects .project-img {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    address {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    address .content  {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
